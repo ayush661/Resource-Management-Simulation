@@ -36,3 +36,7 @@ def run_simulation():
 
 if __name__ == "__main__":
     run_simulation()
+5. Push to GitHub
+git init
+git add .
+git commit -m "Initial commit of resource management simulation"

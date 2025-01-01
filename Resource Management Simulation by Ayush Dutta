@@ -1,6 +1,9 @@
+# Resource Management Simulation
+
 ## Overview
 This project simulates the allocation and management of resources (employees, budget) across multiple projects.
 
 ## Installation
 1. Clone the repository.
 2. Install any necessary dependencies by running:
+pip install -r requirements.txt

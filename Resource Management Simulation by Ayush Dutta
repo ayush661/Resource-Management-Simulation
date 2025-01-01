@@ -7,3 +7,32 @@ This project simulates the allocation and management of resources (employees, bu
 1. Clone the repository.
 2. Install any necessary dependencies by running:
 pip install -r requirements.txt
+## Usage
+1. Run the simulation using:
+src/resource.py
+class Resource:
+    def __init__(self, name, cost):
+        self.name = name
+        self.cost = cost
+src/simulation.py
+from project import Project
+from resource import Resource
+
+def run_simulation():
+    # Example projects
+    project1 = Project("Project A", 1000)
+    project2 = Project("Project B", 500)
+
+    # Example resources
+    res1 = Resource("Resource 1", 300)
+    res2 = Resource("Resource 2", 200)
+
+    # Allocating resources
+    project1.allocate_resource(res1)
+    project2.allocate_resource(res2)
+    project2.allocate_resource(res1)  # This should fail due to budget
+    src/main.py
+    from simulation import run_simulation
+
+if __name__ == "__main__":
+    run_simulation()

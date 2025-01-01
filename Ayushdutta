@@ -1,0 +1,10 @@
+ResourceManagementSimulation/
+├── src/
+│   ├── main.py
+│   ├── project.py
+│   ├── resource.py
+│   └── simulation.py
+├── data/
+│   └── projects.json
+├── requirements.txt
+└── README.md
